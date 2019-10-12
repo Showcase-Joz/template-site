@@ -1,0 +1,1 @@
+{"version":3,"sources":["header.scss"],"names":[],"mappings":"AAAA,MAAA,CACI,OAAA,CAAA,QAAa,CAAb,OAAA,CAAA,IAAa,CACb,gBAAA,CAAA,GAA0B,CAA1B,qBAAA,CAAA,GAA0B,CAAA","file":"header.min.css","sourcesContent":["header {\n    display: grid;\n    grid-template-columns: 1fr;\n\n    \n}"]}

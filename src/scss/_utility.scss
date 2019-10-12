@@ -1,0 +1,33 @@
+
+
+
+/* UTILITIES
+************************
+************************/
+
+// wrappers
+.wrapper {
+    @include dynamic-color($wrapper-bg);
+    width: 100vw;
+
+    &__header {
+        display: grid;
+        min-height: 100px;
+        max-height: 200px;
+        padding: $spacing;
+    }
+
+    &__section {
+        padding: $spacing-lg;
+    }
+
+
+    &__footer {
+        padding: $spacing;
+    }
+}
+
+.show-element {
+    display: block;
+}
+

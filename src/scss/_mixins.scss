@@ -1,0 +1,83 @@
+// from dynamic color function
+// saves writing the color twice
+@mixin dynamic-color($color) {
+  background: $color;
+  color: text($color);
+}
+
+/*
+  $bg: green;
+  @include dynamic-color($bg);
+      OR
+  @include dynamic-color(green);
+*/
+
+
+// -----------------------------------------
+
+// breakpoints & example
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range==phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  }
+
+  @else if $range==tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range==tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range==desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  }
+
+  @else if $range==big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
+
+/*
+  example usage
+  -------------
+
+  @include for-size(phone-only) {
+        background-color: pink;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        background-color: green;
+    }
+
+    @include for-size(tablet-landscape-up) {
+        background-color: blue;
+    }
+
+    @include for-size(desktop-up) {
+        background-color: red;
+    }
+
+    @include for-size(big-desktop-up) {
+        background-color: peru;
+    }
+
+  */
+
+
+  // -----------------------------------------

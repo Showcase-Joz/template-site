@@ -1,0 +1,30 @@
+/*
+  Author Name: Joz
+  Author URI: https://showcaseimagery.com
+  Note: 
+
+  -- partial imports
+  -- import fonts
+  -- font awesome import & setup
+  -- page styles
+
+  ++Do not remove the back-link in this web template
+
+
+
+  -------------------------------------------------------
+*/
+
+@import '_imports';
+
+// wrappers, 
+@import '_functions';
+@import '_mixins';
+@import 'site-variables';
+@import '_utility';
+
+// main nav, footer
+@import '_header';
+@import '_nav';
+@import '_footer';
+

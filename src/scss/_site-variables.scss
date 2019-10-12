@@ -1,0 +1,31 @@
+
+
+
+// font
+
+$family: 'Fira Sans', sans-serif;
+
+$size-2: 5rem;
+$size-3: 2rem;
+$size-p: 1rem;
+
+$weight-light: 300;
+$weight: 400;
+$weight-bold: 600;
+
+
+// colors
+$primary-color: SlateBlue;
+$secondary-color: orange;
+$wrapper-bg: black;
+
+
+// spacing
+$spacing: 1rem;
+$spacing-md: calc(#{$spacing} * 1.5);
+$spacing-lg: calc(#{$spacing} * 2);
+
+
+// standard stying
+$radius: 5px;
+$shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4)

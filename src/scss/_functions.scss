@@ -1,0 +1,8 @@
+// dynamically update the text color, based on background color & example
+@function text($primary-color) {
+    @if(lightness($primary-color) > 50) {
+      @return #000;
+    } @else {
+      @return #fff;
+    }
+  }
